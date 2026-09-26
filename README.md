@@ -5,6 +5,25 @@
 
 ---
 
+## 📅 10-Day Project Roadmap & Status
+
+| Day | Focus & Work Planned | Deliverables | Status |
+|---|---|---|---|
+| **Day 1** | **Requirement Gathering & Research** | Requirement document + project scope | ✅ Completed |
+| **Day 2** | **Competitor & Market Research** | Competitor analysis + feature list | ⏳ Pending |
+| **Day 3** | **Content Collection & Website Structure** | Content sheet + sitemap | ⏳ Pending |
+| **Day 4** | **UI/UX Design** | Website wireframe/UI design | ⏳ Pending |
+| **Day 5** | **Homepage Development** | Functional homepage | ⏳ Pending |
+| **Day 6** | **Menu & Gallery Development** | Menu + gallery pages/sections | ⏳ Pending |
+| **Day 7** | **About, Contact & Location** | Complete inner pages | ⏳ Pending |
+| **Day 8** | **Responsive Design & Functionality** | Responsive functional website | ⏳ Pending |
+| **Day 9** | **Testing, SEO & Performance** | Tested and optimized website | ⏳ Pending |
+| **Day 10** | **Final Review & Deployment** | Final website + deployment + project documentation | ⏳ Pending |
+
+*Detailed breakdown available in [`PROJECT_PLAN.md`](./PROJECT_PLAN.md)*.
+
+---
+
 ## ☕ Overview
 
 **Autumn Leaf Cafe** is a modern, responsive web application crafted for the Thukkuguda branch in Hyderabad. Designed to deliver an elegant digital experience, it showcases artisanal coffee, fresh brunch menu options, lush outdoor ambience photos, location details, customer feedback, and an instant **WhatsApp Table Reservation Engine**.
@@ -88,6 +107,8 @@ Autumn-Leaf-Cafe/
 │   └── main.jsx
 ├── index.html
 ├── package.json
+├── PROJECT_PLAN.md           # 10-Day Project Roadmap & Status
+├── README.md                 # Documentation
 ├── tailwind.config.js
 └── vite.config.js
 ```
