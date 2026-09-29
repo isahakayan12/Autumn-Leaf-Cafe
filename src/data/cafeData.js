@@ -36,41 +36,9 @@ export const MENU_CATEGORIES = [
 ];
 
 export const MENU_ITEMS = [
+  // Artisan Coffee
   {
     id: 1,
-    name: "Avocado & Poached Egg Toast",
-    category: "breakfast",
-    price: 420,
-    diet: "non-veg", // contains eggs
-    tags: ["Chef's Special", "Gluten-Free Option"],
-    description: "Smashed Hass avocado, organic poached eggs with runny golden yolks, microgreens & chilli flakes on toasted artisan sourdough.",
-    image: "/images/avocado_toast.jpg",
-    bestseller: true
-  },
-  {
-    id: 2,
-    name: "Autumn Leaf Garden Skillet",
-    category: "breakfast",
-    price: 380,
-    diet: "veg",
-    tags: ["Chef's Special"],
-    description: "Sautéed wild mushrooms, baby spinach, roasted cherry tomatoes, bell peppers & melted cheddar served with warm garlic brioche.",
-    image: "/images/avocado_toast.jpg",
-    bestseller: false
-  },
-  {
-    id: 3,
-    name: "Classic French Omelette",
-    category: "breakfast",
-    price: 340,
-    diet: "non-veg",
-    tags: [],
-    description: "Creamy folded three-egg omelette stuffed with herbs, caramelized onions & gruyère cheese with grilled breakfast sausages.",
-    image: "/images/avocado_toast.jpg",
-    bestseller: false
-  },
-  {
-    id: 4,
     name: "Signature Spanish Latte",
     category: "coffee",
     price: 260,
@@ -81,7 +49,7 @@ export const MENU_ITEMS = [
     bestseller: true
   },
   {
-    id: 5,
+    id: 2,
     name: "Handcrafted Iced Cappuccino",
     category: "coffee",
     price: 240,
@@ -92,7 +60,7 @@ export const MENU_ITEMS = [
     bestseller: false
   },
   {
-    id: 6,
+    id: 3,
     name: "Cold Brew Tonic & Orange Citrus",
     category: "coffee",
     price: 270,
@@ -103,7 +71,77 @@ export const MENU_ITEMS = [
     bestseller: true
   },
   {
+    id: 4,
+    name: "Classic Pour-Over (Arabica Single Origin)",
+    category: "coffee",
+    price: 210,
+    diet: "vegan",
+    tags: ["Vegan", "Single Origin"],
+    description: "Artisanal hand-poured single origin Arabica coffee highlighting floral notes and bright acidity.",
+    image: "/images/artisanal_coffee.jpg",
+    bestseller: false
+  },
+  {
+    id: 5,
+    name: "Hazelnut Mocha Crave",
+    category: "coffee",
+    price: 250,
+    diet: "veg",
+    tags: ["Customer Favorite"],
+    description: "Rich espresso blended with dark Belgian cocoa, roasted hazelnut syrup & steamed milk.",
+    image: "/images/artisanal_coffee.jpg",
+    bestseller: false
+  },
+
+  // Breakfast & Brunch
+  {
+    id: 6,
+    name: "Avocado & Poached Egg Toast",
+    category: "breakfast",
+    price: 420,
+    diet: "non-veg", // contains eggs
+    tags: ["Chef's Special", "Gluten-Free Option"],
+    description: "Smashed Hass avocado, organic poached eggs with runny golden yolks, microgreens & chilli flakes on toasted artisan sourdough.",
+    image: "/images/avocado_toast.jpg",
+    bestseller: true
+  },
+  {
     id: 7,
+    name: "Autumn Leaf Garden Skillet",
+    category: "breakfast",
+    price: 380,
+    diet: "veg",
+    tags: ["Chef's Special"],
+    description: "Sautéed wild mushrooms, baby spinach, roasted cherry tomatoes, bell peppers & melted cheddar served with warm garlic brioche.",
+    image: "/images/avocado_toast.jpg",
+    bestseller: false
+  },
+  {
+    id: 8,
+    name: "Classic French Omelette",
+    category: "breakfast",
+    price: 340,
+    diet: "non-veg",
+    tags: ["High Protein"],
+    description: "Creamy folded three-egg omelette stuffed with herbs, caramelized onions & gruyère cheese with grilled breakfast sausages.",
+    image: "/images/avocado_toast.jpg",
+    bestseller: false
+  },
+  {
+    id: 9,
+    name: "Fluffy Belgian Waffles with Maple & Berries",
+    category: "breakfast",
+    price: 360,
+    diet: "veg",
+    tags: ["Kids Favorite"],
+    description: "Golden crisp Belgian waffles served with pure Quebec maple syrup, fresh mixed berries & whipped vanilla cream.",
+    image: "/images/avocado_toast.jpg",
+    bestseller: false
+  },
+
+  // Mains & Pastas
+  {
+    id: 10,
     name: "Truffle & Wild Mushroom Fettuccine",
     category: "mains",
     price: 540,
@@ -114,7 +152,7 @@ export const MENU_ITEMS = [
     bestseller: true
   },
   {
-    id: 8,
+    id: 11,
     name: "Woodfired Herb Chicken Pizza",
     category: "mains",
     price: 580,
@@ -125,7 +163,7 @@ export const MENU_ITEMS = [
     bestseller: true
   },
   {
-    id: 9,
+    id: 12,
     name: "Grilled Mediterranean Panini",
     category: "mains",
     price: 410,
@@ -136,7 +174,31 @@ export const MENU_ITEMS = [
     bestseller: false
   },
   {
-    id: 10,
+    id: 13,
+    name: "Four Cheese Sourdough Pizza",
+    category: "mains",
+    price: 520,
+    diet: "veg",
+    tags: ["Vegetarian"],
+    description: "Artisanal sourdough crust topped with Mozzarella, Gorgonzola, Cheddar, and Parmigiano with fresh oregano.",
+    image: "/images/truffle_pasta.jpg",
+    bestseller: false
+  },
+  {
+    id: 14,
+    name: "Penne Arrabbiata with Garlic Bread",
+    category: "mains",
+    price: 460,
+    diet: "veg",
+    tags: ["Spicy"],
+    description: "Al dente penne pasta in fiery San Marzano tomato sauce, fresh garlic, chilli flakes & extra virgin olive oil.",
+    image: "/images/truffle_pasta.jpg",
+    bestseller: false
+  },
+
+  // Bakery & Desserts
+  {
+    id: 15,
     name: "Wild Berry Cheesecake",
     category: "desserts",
     price: 360,
@@ -147,18 +209,31 @@ export const MENU_ITEMS = [
     bestseller: true
   },
   {
-    id: 11,
+    id: 16,
     name: "Warm Belgian Chocolate Lava Cake",
     category: "desserts",
     price: 350,
     diet: "veg",
-    tags: [],
+    tags: ["Warm Dessert"],
     description: "Decadent dark chocolate molten cake with oozing center, paired with artisanal Madagascar vanilla bean ice cream.",
     image: "/images/berry_cheesecake.jpg",
     bestseller: false
   },
   {
-    id: 12,
+    id: 17,
+    name: "Artisanal Cinnamon Roll",
+    category: "desserts",
+    price: 240,
+    diet: "veg",
+    tags: ["Freshly Baked"],
+    description: "Warm buttery brioche roll swirled with Ceylon cinnamon and glazed with cream cheese frosting.",
+    image: "/images/berry_cheesecake.jpg",
+    bestseller: false
+  },
+
+  // Refreshers & Teas
+  {
+    id: 18,
     name: "Hibiscus Passionfruit Iced Tea",
     category: "refreshers",
     price: 220,
@@ -167,6 +242,28 @@ export const MENU_ITEMS = [
     description: "Organic steeped hibiscus flowers, passionfruit nectar, fresh mint leaves & sparkling spring water.",
     image: "/images/artisanal_coffee.jpg",
     bestseller: true
+  },
+  {
+    id: 19,
+    name: "Fresh Mint & Cucumber Cooler",
+    category: "refreshers",
+    price: 190,
+    diet: "vegan",
+    tags: ["Vegan", "Hydrating"],
+    description: "Crushed garden mint, fresh English cucumber, lemon juice & crushed ice topped with soda.",
+    image: "/images/artisanal_coffee.jpg",
+    bestseller: false
+  },
+  {
+    id: 20,
+    name: "Matcha Green Tea Latte",
+    category: "refreshers",
+    price: 260,
+    diet: "veg",
+    tags: ["Antioxidant Rich"],
+    description: "Ceremonial grade Uji Japanese matcha whisked with warm almond milk and raw honey.",
+    image: "/images/artisanal_coffee.jpg",
+    bestseller: false
   }
 ];
 
