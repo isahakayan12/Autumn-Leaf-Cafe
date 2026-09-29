@@ -112,7 +112,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Fresh local fruit juice.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -125,7 +125,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Refreshing lemonade.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -139,7 +139,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Bubble-gum flavored mojito.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80",
     "bestseller": true
   },
   {
@@ -153,7 +153,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Watermelon-based mojito.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=600&q=80",
     "bestseller": true
   },
   {
@@ -167,7 +167,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Cheesecake with blueberry flavor/topping.",
-    "image": "/images/berry_cheesecake.jpg",
+    "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=600&q=80",
     "bestseller": true
   },
   {
@@ -181,7 +181,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Cheesecake with strawberry flavor/topping.",
-    "image": "/images/berry_cheesecake.jpg",
+    "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80",
     "bestseller": true
   },
   {
@@ -194,7 +194,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Cheesecake with caramel.",
-    "image": "/images/berry_cheesecake.jpg",
+    "image": "https://images.unsplash.com/photo-1508737027454-e6454ef46afd?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -207,7 +207,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Dark chocolate mousse.",
-    "image": "/images/berry_cheesecake.jpg",
+    "image": "https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -220,7 +220,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Milk chocolate mousse.",
-    "image": "/images/berry_cheesecake.jpg",
+    "image": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -233,7 +233,7 @@ export const MENU_ITEMS = [
       "Contains Egg"
     ],
     "description": "Classic tiramisu.",
-    "image": "/images/berry_cheesecake.jpg",
+    "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -247,7 +247,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Classic Caesar-style salad.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&w=600&q=80",
     "bestseller": true
   },
   {
@@ -260,7 +260,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Quinoa-based salad.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -273,7 +273,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Tex-Mex inspired salad.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -287,7 +287,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Butter chicken served with rice.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=600&q=80",
     "bestseller": true
   },
   {
@@ -301,7 +301,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Korean-style katsu with rice.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=600&q=80",
     "bestseller": true
   },
   {
@@ -314,7 +314,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Lamb meat served with rice.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -327,7 +327,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Paneer butter masala with rice.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -340,7 +340,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Thai curry with non-vegetarian protein and rice.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -353,7 +353,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Vegetarian Thai curry with rice.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -366,7 +366,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Espresso served with ice cream.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -379,7 +379,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Hot chocolate.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -392,7 +392,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Espresso coffee.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -405,7 +405,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Double espresso.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -418,7 +418,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Espresso with hot water.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -431,7 +431,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Espresso with steamed milk.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -444,7 +444,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Espresso with steamed milk and foam.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -457,7 +457,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Chocolate-flavored espresso drink.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -471,7 +471,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Espresso with steamed milk.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1577968897966-3d4325b36b61?auto=format&fit=crop&w=600&q=80",
     "bestseller": true
   },
   {
@@ -484,7 +484,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Grilled cottage cheese prepared as a steak.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -497,7 +497,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Mixed seafood casserole.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -511,7 +511,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Roast chicken.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=600&q=80",
     "bestseller": true
   },
   {
@@ -524,7 +524,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Chicken piccata with creamy sauce.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -537,7 +537,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Indonesian-style fried rice with chicken.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -550,7 +550,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Crispy French fries.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -563,7 +563,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Chicken wings.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -576,7 +576,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Crispy cheese poppers.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -589,7 +589,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Chicken skewers with chipotle seasoning.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -603,7 +603,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Fried fish with chips.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1579208030886-b937da0925dc?auto=format&fit=crop&w=600&q=80",
     "bestseller": true
   },
   {
@@ -616,7 +616,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Mediterranean-style prawns.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -629,7 +629,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Mexican-style nacho bowl.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -642,7 +642,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Loaded/overloaded fries.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -655,7 +655,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Moroccan-style fish kebab.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -669,7 +669,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Toast topped with avocado.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80",
     "bestseller": true
   },
   {
@@ -682,7 +682,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Prawns with dynamite-style sauce.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1535400255456-984241443b29?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -695,7 +695,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Assorted meat canapes.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -708,7 +708,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Smoked lamb kebab.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -721,7 +721,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Assorted vegetarian canapes.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -734,7 +734,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Toast with wild mushrooms.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -747,7 +747,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Afghani-style chicken.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -760,7 +760,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Kung Pao chicken.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -773,7 +773,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Breaded fried chicken tenders.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -786,7 +786,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Smoked chicken kebab.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -799,7 +799,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Crispy tempura vegetables.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -812,7 +812,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Soup listed under this menu name.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -825,7 +825,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Clear chicken soup.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -838,7 +838,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Hungarian-style mushroom soup.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1603105037880-880cd4edfb5d?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -851,7 +851,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Tomato soup with basil.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -864,7 +864,7 @@ export const MENU_ITEMS = [
       "Contains Egg"
     ],
     "description": "French toast stuffed/flavored with apple and cinnamon.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1484723091479-0097771360da?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -877,7 +877,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Assorted fresh fruit.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -890,7 +890,7 @@ export const MENU_ITEMS = [
       "Contains Egg"
     ],
     "description": "Egg omelette.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -903,7 +903,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Grilled cheese sandwich.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -916,7 +916,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Vegetable sandwich with basil pesto.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -929,7 +929,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Spinach, corn and cheese sandwich.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -942,7 +942,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Grilled chicken sandwich.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -955,7 +955,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Non-vegetarian sandwich with basil pesto.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -968,7 +968,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Paneer tikka sandwich.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -981,7 +981,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Smoked chicken sandwich.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -994,7 +994,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Chicken burger with Jamaican jerk seasoning.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1007,7 +1007,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Chicken burger with cheese.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1020,7 +1020,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Lamb burger.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1033,7 +1033,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Crispy chicken burger.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1046,7 +1046,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Crispy fish burger.",
-    "image": "/images/avocado_toast.jpg",
+    "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1060,7 +1060,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Creamy Alfredo pasta with mushrooms.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1621996346565-e3d5d6281292?auto=format&fit=crop&w=600&q=80",
     "bestseller": true
   },
   {
@@ -1073,7 +1073,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Pasta with garlic and olive oil.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1086,7 +1086,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Pasta with basil pesto.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1099,7 +1099,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Risotto with pulled chicken and sundried tomato.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1112,7 +1112,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Creamy saffron risotto with shrimp.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1125,7 +1125,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Macaroni with cheese sauce.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1139,7 +1139,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Risotto with truffle and mushrooms.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=600&q=80",
     "bestseller": true
   },
   {
@@ -1152,7 +1152,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Pasta with peri-peri chicken.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": "https://images.unsplash.com/photo-1621996346565-e3d5d6281292?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1165,7 +1165,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Lemon iced tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1178,7 +1178,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Peach iced tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1499638673689-79a0b5115d87?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1191,7 +1191,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Red grape iced tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1204,7 +1204,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Iced matcha tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1217,7 +1217,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Taro iced tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1558857563-b371033873b8?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1230,7 +1230,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Chilled coffee.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1243,7 +1243,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Coffee with buttered toffee flavor.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1256,7 +1256,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Chilled black coffee.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1269,7 +1269,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Cold coffee prepared with two types of milk.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1282,7 +1282,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Iced latte.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1295,7 +1295,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Iced mocha.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1308,7 +1308,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Chocolate milkshake.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1321,7 +1321,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Strawberry milkshake.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1334,7 +1334,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Coffee and brownie milkshake.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1348,7 +1348,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Oreo milkshake.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80",
     "bestseller": true
   },
   {
@@ -1361,7 +1361,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Watermelon, basil and lime cooler.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1374,7 +1374,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Green tea with apple and cinnamon.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1387,7 +1387,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Peach-flavored oolong tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1400,7 +1400,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Green tea with lavender.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1413,7 +1413,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Jasmine tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1426,7 +1426,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Chamomile green tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   },
   {
@@ -1439,7 +1439,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Hibiscus green tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80",
     "bestseller": false
   }
 ];
