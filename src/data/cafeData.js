@@ -112,7 +112,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Fresh local fruit juice.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -125,7 +125,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Refreshing lemonade.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -139,7 +139,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Bubble-gum flavored mojito.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": true
   },
   {
@@ -153,7 +153,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Watermelon-based mojito.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": true
   },
   {
@@ -167,7 +167,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Cheesecake with blueberry flavor/topping.",
-    "image": "/images/berry_cheesecake.jpg",
+    "image": null,
     "bestseller": true
   },
   {
@@ -181,7 +181,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Cheesecake with strawberry flavor/topping.",
-    "image": "/images/berry_cheesecake.jpg",
+    "image": null,
     "bestseller": true
   },
   {
@@ -194,7 +194,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Cheesecake with caramel.",
-    "image": "/images/berry_cheesecake.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -207,7 +207,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Dark chocolate mousse.",
-    "image": "/images/berry_cheesecake.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -220,7 +220,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Milk chocolate mousse.",
-    "image": "/images/berry_cheesecake.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -233,7 +233,7 @@ export const MENU_ITEMS = [
       "Contains Egg"
     ],
     "description": "Classic tiramisu.",
-    "image": "/images/berry_cheesecake.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -247,7 +247,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Classic Caesar-style salad.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": true
   },
   {
@@ -260,7 +260,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Quinoa-based salad.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -273,7 +273,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Tex-Mex inspired salad.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -287,7 +287,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Butter chicken served with rice.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": true
   },
   {
@@ -301,7 +301,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Korean-style katsu with rice.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": true
   },
   {
@@ -314,7 +314,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Lamb meat served with rice.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -327,7 +327,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Paneer butter masala with rice.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -340,7 +340,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Thai curry with non-vegetarian protein and rice.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -353,7 +353,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Vegetarian Thai curry with rice.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -366,7 +366,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Espresso served with ice cream.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -379,7 +379,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Hot chocolate.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -392,7 +392,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Espresso coffee.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -405,7 +405,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Double espresso.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -418,7 +418,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Espresso with hot water.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -431,7 +431,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Espresso with steamed milk.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -444,7 +444,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Espresso with steamed milk and foam.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -457,7 +457,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Chocolate-flavored espresso drink.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -471,7 +471,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Espresso with steamed milk.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": true
   },
   {
@@ -484,7 +484,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Grilled cottage cheese prepared as a steak.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -497,7 +497,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Mixed seafood casserole.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -511,7 +511,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Roast chicken.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": true
   },
   {
@@ -524,7 +524,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Chicken piccata with creamy sauce.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -537,7 +537,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Indonesian-style fried rice with chicken.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -550,7 +550,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Crispy French fries.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -563,7 +563,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Chicken wings.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -576,7 +576,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Crispy cheese poppers.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -589,7 +589,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Chicken skewers with chipotle seasoning.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -603,7 +603,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Fried fish with chips.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": true
   },
   {
@@ -616,7 +616,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Mediterranean-style prawns.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -629,7 +629,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Mexican-style nacho bowl.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -642,7 +642,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Loaded/overloaded fries.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -655,7 +655,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Moroccan-style fish kebab.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -669,7 +669,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Toast topped with avocado.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": true
   },
   {
@@ -682,7 +682,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Prawns with dynamite-style sauce.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -695,7 +695,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Assorted meat canapes.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -708,7 +708,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Smoked lamb kebab.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -721,7 +721,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Assorted vegetarian canapes.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -734,7 +734,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Toast with wild mushrooms.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -747,7 +747,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Afghani-style chicken.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -760,7 +760,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Kung Pao chicken.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -773,7 +773,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Breaded fried chicken tenders.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -786,7 +786,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Smoked chicken kebab.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -799,7 +799,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Crispy tempura vegetables.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -812,7 +812,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Soup listed under this menu name.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -825,7 +825,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Clear chicken soup.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -838,7 +838,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Hungarian-style mushroom soup.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -851,7 +851,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Tomato soup with basil.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -864,7 +864,7 @@ export const MENU_ITEMS = [
       "Contains Egg"
     ],
     "description": "French toast stuffed/flavored with apple and cinnamon.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -877,7 +877,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Assorted fresh fruit.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -890,7 +890,7 @@ export const MENU_ITEMS = [
       "Contains Egg"
     ],
     "description": "Egg omelette.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -903,7 +903,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Grilled cheese sandwich.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -916,7 +916,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Vegetable sandwich with basil pesto.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -929,7 +929,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Spinach, corn and cheese sandwich.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -942,7 +942,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Grilled chicken sandwich.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -955,7 +955,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Non-vegetarian sandwich with basil pesto.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -968,7 +968,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Paneer tikka sandwich.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -981,7 +981,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Smoked chicken sandwich.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -994,7 +994,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Chicken burger with Jamaican jerk seasoning.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1007,7 +1007,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Chicken burger with cheese.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1020,7 +1020,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Lamb burger.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1033,7 +1033,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Crispy chicken burger.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1046,7 +1046,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Crispy fish burger.",
-    "image": "/images/avocado_toast.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1060,7 +1060,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Creamy Alfredo pasta with mushrooms.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": true
   },
   {
@@ -1073,7 +1073,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Pasta with garlic and olive oil.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1086,7 +1086,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Pasta with basil pesto.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1099,7 +1099,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Risotto with pulled chicken and sundried tomato.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1112,7 +1112,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Creamy saffron risotto with shrimp.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1125,7 +1125,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Macaroni with cheese sauce.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1139,7 +1139,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Risotto with truffle and mushrooms.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": true
   },
   {
@@ -1152,7 +1152,7 @@ export const MENU_ITEMS = [
       "Non-Veg"
     ],
     "description": "Pasta with peri-peri chicken.",
-    "image": "/images/truffle_pasta.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1165,7 +1165,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Lemon iced tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1178,7 +1178,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Peach iced tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1191,7 +1191,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Red grape iced tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1204,7 +1204,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Iced matcha tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1217,7 +1217,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Taro iced tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1230,7 +1230,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Chilled coffee.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1243,7 +1243,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Coffee with buttered toffee flavor.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1256,7 +1256,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Chilled black coffee.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1269,7 +1269,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Cold coffee prepared with two types of milk.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1282,7 +1282,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Iced latte.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1295,7 +1295,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Iced mocha.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1308,7 +1308,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Chocolate milkshake.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1321,7 +1321,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Strawberry milkshake.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1334,7 +1334,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Coffee and brownie milkshake.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1348,7 +1348,7 @@ export const MENU_ITEMS = [
       "Bestseller"
     ],
     "description": "Oreo milkshake.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": true
   },
   {
@@ -1361,7 +1361,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Watermelon, basil and lime cooler.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1374,7 +1374,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Green tea with apple and cinnamon.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1387,7 +1387,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Peach-flavored oolong tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1400,7 +1400,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Green tea with lavender.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1413,7 +1413,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Jasmine tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1426,7 +1426,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Chamomile green tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   },
   {
@@ -1439,7 +1439,7 @@ export const MENU_ITEMS = [
       "Vegetarian"
     ],
     "description": "Hibiscus green tea.",
-    "image": "/images/artisanal_coffee.jpg",
+    "image": null,
     "bestseller": false
   }
 ];
