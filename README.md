@@ -12,9 +12,9 @@
 | **Day 1** | **Requirement Gathering & Research** | Requirement document + project scope | ✅ Completed |
 | **Day 2** | **Competitor & Market Research** | Competitor analysis + feature list ([`COMPETITOR_ANALYSIS.md`](./COMPETITOR_ANALYSIS.md)) | ✅ Completed |
 | **Day 3** | **Content Collection & Website Structure** | Content sheet + sitemap | ✅ Completed |
-| **Day 4** | **UI/UX Design** | Website wireframe/UI design | ⏳ Pending |
-| **Day 5** | **Homepage Development** | Functional homepage | ⏳ Pending |
-| **Day 6** | **Menu & Gallery Development** | Menu + gallery pages/sections | ⏳ Pending |
+| **Day 4** | **UI/UX Design** | Website wireframe/UI design | ✅ Completed |
+| **Day 5** | **Homepage Development** | Functional homepage | ✅ Completed |
+| **Day 6** | **Menu & Gallery Development** | Menu + gallery pages/sections | ✅ Completed |
 | **Day 7** | **About, Contact & Location** | Complete inner pages | ⏳ Pending |
 | **Day 8** | **Responsive Design & Functionality** | Responsive functional website | ⏳ Pending |
 | **Day 9** | **Testing, SEO & Performance** | Tested and optimized website | ⏳ Pending |
