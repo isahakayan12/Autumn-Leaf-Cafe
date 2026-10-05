@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Search, Download, Leaf, Sparkles, MessageSquare, Filter } from 'lucide-react';
+import { Search, Download, Leaf, Sparkles, MessageSquare, Filter, LayoutGrid, List } from 'lucide-react';
 import { MENU_CATEGORIES, MENU_ITEMS, CAFE_INFO } from '../data/cafeData';
 
 export default function MenuSection({ onOpenReservation }) {
   const [activeCategory, setActiveCategory] = useState('all');
   const [dietFilter, setDietFilter] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
+  const [viewMode, setViewMode] = useState('grid'); // 'grid' (Photos) or 'list' (Classic Dotted Leader)
 
   // Filtering Logic
   const filteredItems = MENU_ITEMS.filter((item) => {
@@ -63,14 +64,45 @@ Table Reservation via WhatsApp: +91 95339 63121
             </p>
           </div>
 
-          {/* PDF Download Fallback */}
-          <button
-            onClick={handleDownloadPDF}
-            className="self-start md:self-auto bg-linen-100 border border-hairline hover:bg-linen-200 text-espresso-900 px-4 py-2.5 rounded-lg text-xs font-medium tracking-wide shadow-subtle transition-all flex items-center space-x-2 shrink-0"
-          >
-            <Download className="w-3.5 h-3.5 text-brass-600" />
-            <span>Download PDF Menu (Low Data)</span>
-          </button>
+          {/* View Mode & PDF Download Controls */}
+          <div className="flex items-center space-x-3 self-start md:self-auto shrink-0">
+            {/* View Mode Toggle */}
+            <div className="bg-linen-100 p-1 rounded-lg border border-hairline flex items-center space-x-1">
+              <button
+                onClick={() => setViewMode('grid')}
+                className={`p-1.5 rounded-md text-xs font-medium flex items-center space-x-1 transition-colors ${
+                  viewMode === 'grid' 
+                    ? 'bg-espresso-900 text-cream-50 shadow-subtle' 
+                    : 'text-espresso-100 hover:text-espresso-900'
+                }`}
+                title="Photo Cards View"
+              >
+                <LayoutGrid className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Photo Cards</span>
+              </button>
+              <button
+                onClick={() => setViewMode('list')}
+                className={`p-1.5 rounded-md text-xs font-medium flex items-center space-x-1 transition-colors ${
+                  viewMode === 'list' 
+                    ? 'bg-espresso-900 text-cream-50 shadow-subtle' 
+                    : 'text-espresso-100 hover:text-espresso-900'
+                }`}
+                title="Dotted List View"
+              >
+                <List className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Classic List</span>
+              </button>
+            </div>
+
+            {/* PDF Download Button */}
+            <button
+              onClick={handleDownloadPDF}
+              className="bg-linen-100 border border-hairline hover:bg-linen-200 text-espresso-900 px-3.5 py-2 rounded-lg text-xs font-medium tracking-wide shadow-subtle transition-all flex items-center space-x-1.5"
+            >
+              <Download className="w-3.5 h-3.5 text-brass-600" />
+              <span>PDF Menu</span>
+            </button>
+          </div>
         </div>
 
         {/* Search & Dietary Filter Bar */}
@@ -177,70 +209,147 @@ Table Reservation via WhatsApp: +91 95339 63121
 
         </div>
 
-        {/* Menu Items Classical European List Grid */}
+        {/* Menu Items Grid / List Display */}
         {filteredItems.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
-            {filteredItems.map((item) => (
-              <div
-                key={item.id}
-                className="bg-linen-100/50 p-4 rounded-xl border border-hairline/80 hover:bg-linen-100 hover:border-sage-200 transition-all group flex flex-col justify-between"
-              >
-                <div>
-                  
-                  {/* Classical Dotted Leader Row */}
-                  <div className="dotted-leader mb-1">
-                    <span className="bg-transparent font-serif text-lg font-normal text-espresso-900 group-hover:text-sage-700 transition-colors">
-                      {item.name}
-                    </span>
-                    <span className="bg-transparent font-sans text-sm font-semibold text-brass-600">
-                      ₹{item.price}
-                    </span>
-                  </div>
+          viewMode === 'grid' ? (
+            /* PHOTO CARDS GRID VIEW */
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filteredItems.map((item) => (
+                <div
+                  key={item.id}
+                  className="bg-linen-100/60 rounded-xl overflow-hidden border border-hairline hover:border-sage-200 shadow-subtle transition-all flex flex-col justify-between group"
+                >
+                  <div>
+                    {/* Dish Photo */}
+                    {item.image && (
+                      <div className="relative h-44 sm:h-48 overflow-hidden bg-linen-200">
+                        <img
+                          src={item.image}
+                          alt={item.name}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-espresso-950/40 via-transparent to-transparent opacity-60"></div>
+                        
+                        {/* Bestseller Badge */}
+                        {item.bestseller && (
+                          <span className="absolute top-3 right-3 bg-brass text-white font-medium text-[10px] uppercase px-2.5 py-0.5 rounded shadow-sm">
+                            Bestseller
+                          </span>
+                        )}
 
-                  {/* Description */}
-                  <p className="text-xs text-espresso-100 font-light leading-relaxed mb-3">
-                    {item.description}
-                  </p>
-
-                  {/* Badges & Tags */}
-                  <div className="flex flex-wrap items-center gap-2 mb-3">
-                    {item.bestseller && (
-                      <span className="text-[10px] font-medium bg-brass-50 text-brass-700 border border-brass-200 px-2 py-0.5 rounded">
-                        Bestseller
-                      </span>
+                        {/* Dietary Tag Badge */}
+                        <div className="absolute top-3 left-3 bg-cream/90 backdrop-blur-md px-2 py-0.5 rounded border border-hairline flex items-center space-x-1 shadow-sm">
+                          {item.diet === 'veg' && <span className="w-1.5 h-1.5 rounded-full bg-sage-500"></span>}
+                          {item.diet === 'non-veg' && <span className="w-1.5 h-1.5 rounded-full bg-brass-500"></span>}
+                          {item.diet === 'vegan' && <Leaf className="w-3 h-3 text-sage-600" />}
+                          <span className="text-[10px] font-medium text-espresso-900 capitalize">{item.diet}</span>
+                        </div>
+                      </div>
                     )}
 
-                    <span className="text-[10px] font-medium text-espresso-100 capitalize bg-cream px-2 py-0.5 rounded border border-hairline flex items-center space-x-1">
-                      {item.diet === 'veg' && <span className="w-1.5 h-1.5 rounded-full bg-sage-500"></span>}
-                      {item.diet === 'non-veg' && <span className="w-1.5 h-1.5 rounded-full bg-brass-500"></span>}
-                      {item.diet === 'vegan' && <Leaf className="w-2.5 h-2.5 text-sage-600" />}
-                      <span>{item.diet}</span>
-                    </span>
+                    {/* Card Content */}
+                    <div className="p-4 sm:p-5">
+                      <div className="dotted-leader mb-1.5">
+                        <span className="font-serif text-lg font-normal text-espresso-900 group-hover:text-sage-700 transition-colors">
+                          {item.name}
+                        </span>
+                        <span className="font-sans text-sm font-semibold text-brass-600 shrink-0 ml-2">
+                          ₹{item.price}
+                        </span>
+                      </div>
 
-                    {item.tags.map((tag, tIdx) => (
-                      <span key={tIdx} className="text-[10px] text-espresso-100/70 bg-cream/70 px-2 py-0.5 rounded">
-                        {tag}
-                      </span>
-                    ))}
+                      <p className="text-xs text-espresso-100 font-light leading-relaxed mb-3">
+                        {item.description}
+                      </p>
+
+                      {/* Tag Pills */}
+                      {item.tags.length > 0 && (
+                        <div className="flex flex-wrap gap-1.5 mb-2">
+                          {item.tags.map((tag, tIdx) => (
+                            <span key={tIdx} className="text-[10px] font-medium bg-cream text-espresso-100/80 px-2 py-0.5 rounded border border-hairline/60">
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   </div>
 
+                  {/* Footer CTA */}
+                  <div className="p-4 sm:p-5 pt-0">
+                    <button
+                      onClick={onOpenReservation}
+                      className="w-full py-2 rounded-lg border border-hairline bg-cream hover:bg-sage hover:text-white hover:border-sage text-espresso-900 font-medium text-xs transition-all flex items-center justify-center space-x-2 shadow-subtle"
+                    >
+                      <MessageSquare className="w-3.5 h-3.5 text-sage-600" />
+                      <span>Reserve Dish on WhatsApp</span>
+                    </button>
+                  </div>
                 </div>
+              ))}
+            </div>
+          ) : (
+            /* CLASSIC DOTTED LIST VIEW */
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+              {filteredItems.map((item) => (
+                <div
+                  key={item.id}
+                  className="bg-linen-100/50 p-4 rounded-xl border border-hairline/80 hover:bg-linen-100 hover:border-sage-200 transition-all group flex flex-col justify-between"
+                >
+                  <div>
+                    {/* Classical Dotted Leader Row */}
+                    <div className="dotted-leader mb-1">
+                      <span className="bg-transparent font-serif text-lg font-normal text-espresso-900 group-hover:text-sage-700 transition-colors">
+                        {item.name}
+                      </span>
+                      <span className="bg-transparent font-sans text-sm font-semibold text-brass-600">
+                        ₹{item.price}
+                      </span>
+                    </div>
 
-                {/* WhatsApp Reservation Button */}
-                <div className="pt-2 border-t border-hairline/60 flex items-center justify-between">
-                  <span className="text-[10px] text-espresso-100/80 italic">Artisanal Preparation</span>
-                  <button
-                    onClick={onOpenReservation}
-                    className="text-xs font-medium text-sage-700 hover:text-sage-600 flex items-center space-x-1 transition-colors"
-                  >
-                    <MessageSquare className="w-3 h-3 text-sage-600" />
-                    <span>Order / Reserve</span>
-                  </button>
+                    {/* Description */}
+                    <p className="text-xs text-espresso-100 font-light leading-relaxed mb-3">
+                      {item.description}
+                    </p>
+
+                    {/* Badges & Tags */}
+                    <div className="flex flex-wrap items-center gap-2 mb-3">
+                      {item.bestseller && (
+                        <span className="text-[10px] font-medium bg-brass-50 text-brass-700 border border-brass-200 px-2 py-0.5 rounded">
+                          Bestseller
+                        </span>
+                      )}
+
+                      <span className="text-[10px] font-medium text-espresso-100 capitalize bg-cream px-2 py-0.5 rounded border border-hairline flex items-center space-x-1">
+                        {item.diet === 'veg' && <span className="w-1.5 h-1.5 rounded-full bg-sage-500"></span>}
+                        {item.diet === 'non-veg' && <span className="w-1.5 h-1.5 rounded-full bg-brass-500"></span>}
+                        {item.diet === 'vegan' && <Leaf className="w-2.5 h-2.5 text-sage-600" />}
+                        <span>{item.diet}</span>
+                      </span>
+
+                      {item.tags.map((tag, tIdx) => (
+                        <span key={tIdx} className="text-[10px] text-espresso-100/70 bg-cream/70 px-2 py-0.5 rounded">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* WhatsApp Reservation Button */}
+                  <div className="pt-2 border-t border-hairline/60 flex items-center justify-between">
+                    <span className="text-[10px] text-espresso-100/80 italic">Artisanal Preparation</span>
+                    <button
+                      onClick={onOpenReservation}
+                      className="text-xs font-medium text-sage-700 hover:text-sage-600 flex items-center space-x-1 transition-colors"
+                    >
+                      <MessageSquare className="w-3 h-3 text-sage-600" />
+                      <span>Order / Reserve</span>
+                    </button>
+                  </div>
                 </div>
-
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )
         ) : (
           <div className="text-center py-16 bg-linen-100 rounded-xl border border-hairline">
             <p className="text-espresso-100 text-sm font-light">No items match your selected filter or search term.</p>
@@ -261,4 +370,5 @@ Table Reservation via WhatsApp: +91 95339 63121
     </section>
   );
 }
+
 
