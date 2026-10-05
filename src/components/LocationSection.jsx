@@ -1,10 +1,41 @@
-import React from 'react';
-import { MapPin, Navigation, Clock, Phone, Car, Plane, Compass, ExternalLink } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { MapPin, Navigation, Clock, Phone, Car, Plane, ExternalLink } from 'lucide-react';
 import { CAFE_INFO } from '../data/cafeData';
 
 export default function LocationSection() {
   const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3811.234!2d78.4892!3d17.2045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDEyJzE2LjIiTiA3OMKwMjknMjEuMSJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin";
   const mapNavUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CAFE_INFO.name + " " + CAFE_INFO.address)}`;
+
+  const [isOpenNow, setIsOpenNow] = useState(true);
+  const [statusText, setStatusText] = useState("Open Now • Closes 9:00 PM IST");
+
+  useEffect(() => {
+    const checkCafeStatus = () => {
+      const now = new Date();
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+      const istTime = new Date(utc + (3600000 * 5.5));
+      
+      const day = istTime.getDay();
+      const hour = istTime.getHours();
+      
+      const isWeekend = (day === 0 || day === 5 || day === 6);
+      const closingHour = isWeekend ? 22 : 21;
+      const openingHour = 8;
+
+      if (hour >= openingHour && hour < closingHour) {
+        setIsOpenNow(true);
+        const closeTimeStr = isWeekend ? "10:00 PM" : "9:00 PM";
+        setStatusText(`Open Now • Closes ${closeTimeStr} IST`);
+      } else {
+        setIsOpenNow(false);
+        setStatusText("Closed Now • Opens 8:00 AM IST");
+      }
+    };
+
+    checkCafeStatus();
+    const interval = setInterval(checkCafeStatus, 60000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section id="location" className="py-20 bg-linen-50 relative">
@@ -58,8 +89,18 @@ export default function LocationSection() {
 
             {/* Operating Hours Table */}
             <div className="pt-2 border-t border-slate-100">
-              <div className="text-xs font-bold text-forest-900 uppercase tracking-wider mb-3 flex items-center">
-                <Clock className="w-4 h-4 text-forest-600 mr-1.5" /> Cafe Hours (IST)
+              <div className="flex items-center justify-between mb-3">
+                <div className="text-xs font-bold text-forest-900 uppercase tracking-wider flex items-center">
+                  <Clock className="w-4 h-4 text-forest-600 mr-1.5" /> Cafe Hours (IST)
+                </div>
+                <div className={`flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-bold border ${
+                  isOpenNow 
+                    ? 'bg-emerald-50 border-emerald-200 text-emerald-800' 
+                    : 'bg-amber-50 border-amber-200 text-amber-800'
+                }`}>
+                  <span className={`w-2 h-2 rounded-full mr-1.5 ${isOpenNow ? 'bg-emerald-500 badge-pulse' : 'bg-amber-500'}`}></span>
+                  {statusText}
+                </div>
               </div>
               <div className="space-y-2 text-xs sm:text-sm">
                 <div className="flex justify-between p-2 rounded-lg bg-slate-50 font-medium">
