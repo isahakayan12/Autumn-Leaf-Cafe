@@ -1,5 +1,6 @@
 import React from 'react';
-import { Plane, Car, Dog, ArrowRight } from 'lucide-react';
+import { Plane, Car, Dog, Coffee, Clock, ShieldCheck, ArrowRight } from 'lucide-react';
+import { CAFE_INFO } from '../data/cafeData';
 
 export default function HighwayBanner({ onOpenReservation }) {
   const userJourneys = [
@@ -7,6 +8,8 @@ export default function HighwayBanner({ onOpenReservation }) {
       title: "Highway & Airport Travelers",
       tagline: "ORR Exit 14 • 15 Mins to RGIA Airport",
       icon: Plane,
+      color: "from-blue-600 to-indigo-700",
+      accent: "bg-blue-500/10 text-blue-700",
       bullets: [
         "2-minute hassle-free turnoff from Outer Ring Road (Exit 14)",
         "Ideal pre-flight meal or layover coffee break before RGIA airport",
@@ -18,6 +21,8 @@ export default function HighwayBanner({ onOpenReservation }) {
       title: "Weekend Drive-Out Diners",
       tagline: "Imamguda Garden Dining Sanctuary",
       icon: Car,
+      color: "from-forest-800 to-forest-950",
+      accent: "bg-forest-900/10 text-forest-900",
       bullets: [
         "Spacious open-air green lawn seating under leafy pergolas",
         "Handcrafted woodfired pizzas & artisanal European comfort food",
@@ -29,6 +34,8 @@ export default function HighwayBanner({ onOpenReservation }) {
       title: "Pet Owners & Dog Lovers",
       tagline: "100% Pet-Friendly Lawn Courtyard",
       icon: Dog,
+      color: "from-terracotta to-amber-700",
+      accent: "bg-terracotta/10 text-terracotta",
       bullets: [
         "Expansive natural grass lawns where your pets can stretch & relax",
         "Shaded outdoor tables with fresh water bowls provided",
@@ -39,19 +46,19 @@ export default function HighwayBanner({ onOpenReservation }) {
   ];
 
   return (
-    <section id="highway" className="py-24 sm:py-28 bg-linen-100/60 border-y border-hairline relative">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="highway" className="py-20 bg-linen-100 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-[11px] font-medium uppercase tracking-widest text-sage-600 bg-sage-50 px-3 py-1 rounded-full inline-block mb-3 border border-sage-200">
-            Thoughtful Hospitality
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-xs font-bold uppercase tracking-widest text-terracotta bg-terracotta/10 px-3.5 py-1.5 rounded-full inline-block mb-3">
+            Tailored Experience
           </span>
-          <h2 className="font-serif text-3xl sm:text-5xl font-normal text-espresso-900 mb-4 leading-tight">
-            Designed for Every Journey
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-forest-900 mb-4">
+            Designed for Every Journey & Dining Occasion
           </h2>
-          <p className="text-espresso-100 text-sm sm:text-base leading-relaxed">
-            Whether catching a flight at Shamshabad Airport, taking a weekend drive off ORR Exit 14, or bringing pets for a sunny brunch, Autumn Leaf Cafe is your unhurried retreat.
+          <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
+            Whether you are catching a flight at Shamshabad Airport, taking a weekend drive down ORR Exit 14, or bringing your pets for a sunny brunch, Autumn Leaf Cafe is your tranquil sanctuary.
           </p>
         </div>
 
@@ -62,29 +69,29 @@ export default function HighwayBanner({ onOpenReservation }) {
             return (
               <div
                 key={idx}
-                className="bg-cream rounded-xl p-7 border border-hairline shadow-subtle hover:border-sage-200 transition-all flex flex-col justify-between"
+                className="bg-white rounded-3xl p-7 shadow-soft border border-forest-900/10 hover:shadow-elevated transition-all transform hover:-translate-y-1 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <div className="w-11 h-11 rounded-lg bg-sage-50 border border-sage-200 text-sage-700 flex items-center justify-center">
-                      <IconComponent className="w-5 h-5 text-sage-600" />
+                    <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${journey.color} text-white flex items-center justify-center shadow-md`}>
+                      <IconComponent className="w-7 h-7" />
                     </div>
-                    <span className="text-[10px] font-medium tracking-widest px-2.5 py-1 rounded border border-hairline uppercase text-espresso-100 bg-linen-50">
-                      Sanctuary
+                    <span className={`text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider ${journey.accent}`}>
+                      Targeted Service
                     </span>
                   </div>
 
-                  <h3 className="font-serif text-2xl font-normal text-espresso-900 mb-1">
+                  <h3 className="font-serif text-2xl font-bold text-forest-900 mb-1">
                     {journey.title}
                   </h3>
-                  <p className="text-xs font-medium text-brass-600 mb-6">
+                  <p className="text-xs font-semibold text-earthgold-dark mb-6">
                     {journey.tagline}
                   </p>
 
                   <ul className="space-y-3 mb-8">
                     {journey.bullets.map((bullet, i) => (
-                      <li key={i} className="flex items-start text-xs sm:text-sm text-espresso-100/90 leading-relaxed">
-                        <span className="w-1.5 h-1.5 rounded-full bg-sage-500 mt-2 mr-2.5 shrink-0"></span>
+                      <li key={i} className="flex items-start text-xs sm:text-sm text-slate-700">
+                        <span className="w-1.5 h-1.5 rounded-full bg-forest-600 mt-2 mr-2.5 shrink-0"></span>
                         <span>{bullet}</span>
                       </li>
                     ))}
@@ -93,10 +100,10 @@ export default function HighwayBanner({ onOpenReservation }) {
 
                 <button
                   onClick={onOpenReservation}
-                  className="w-full py-2.5 rounded-lg bg-linen-100 hover:bg-sage hover:text-white text-espresso-900 font-medium text-xs tracking-wide transition-all border border-hairline flex items-center justify-center space-x-2 group"
+                  className="w-full py-3 rounded-xl bg-linen-200 hover:bg-forest-900 hover:text-white text-forest-900 font-semibold text-xs sm:text-sm transition-all flex items-center justify-center space-x-2 group"
                 >
-                  <span>Reserve for This Journey</span>
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  <span>Reserve Table for This Journey</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
             );
@@ -107,4 +114,3 @@ export default function HighwayBanner({ onOpenReservation }) {
     </section>
   );
 }
-

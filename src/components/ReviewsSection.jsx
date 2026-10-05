@@ -1,24 +1,28 @@
 import React from 'react';
-import { Star, MessageSquare } from 'lucide-react';
+import { Star, MessageSquare, Quote, Heart } from 'lucide-react';
 import { REVIEWS } from '../data/cafeData';
 
 export default function ReviewsSection({ onOpenReservation }) {
   return (
-    <section id="reviews" className="py-24 sm:py-28 bg-espresso-950 text-cream-50 relative overflow-hidden border-t border-hairline/20">
+    <section id="reviews" className="py-20 bg-forest-950 text-white relative overflow-hidden">
       
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      {/* Background Accent glow */}
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-forest-800/30 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-terracotta/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Rating Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="inline-flex items-center space-x-2 bg-cream-50/10 text-brass-500 px-3 py-1 rounded-full text-[11px] font-medium uppercase tracking-widest mb-4 border border-cream-50/15">
-            <Star className="w-3.5 h-3.5 fill-brass-500 text-brass-500" />
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="inline-flex items-center space-x-2 bg-warmgold/20 text-warmgold px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-warmgold/30">
+            <Star className="w-4 h-4 fill-warmgold" />
             <span>4.8 Rating on Google (2,500+ Reviews)</span>
           </div>
           
-          <h2 className="font-serif text-3xl sm:text-5xl font-normal text-cream-50 mb-4">
-            Loved by Travelers & Regulars
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">
+            Loved by Travelers & Weekend Diners
           </h2>
-          <p className="text-cream-100/70 text-sm sm:text-base font-light leading-relaxed">
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
             Read real experiences from airport layover guests, pet parents, and family weekend brunch regulars.
           </p>
         </div>
@@ -28,26 +32,26 @@ export default function ReviewsSection({ onOpenReservation }) {
           {REVIEWS.map((rev) => (
             <div
               key={rev.id}
-              className="bg-espresso-900/80 p-7 rounded-xl border border-hairline/30 flex flex-col justify-between hover:border-hairline/60 transition-all shadow-subtle"
+              className="bg-white/5 backdrop-blur-md p-7 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition-all"
             >
               <div>
-                <div className="flex items-center space-x-1 text-brass-500 mb-4">
+                <div className="flex items-center space-x-1 text-warmgold mb-4">
                   {[...Array(rev.rating)].map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-brass-500 text-brass-500" />
+                    <Star key={i} className="w-4 h-4 fill-warmgold" />
                   ))}
                 </div>
-                <p className="text-cream-100/90 text-sm font-light italic leading-relaxed mb-6">
+                <p className="text-slate-200 text-sm italic leading-relaxed mb-6">
                   "{rev.comment}"
                 </p>
               </div>
 
-              <div className="flex items-center space-x-3 pt-4 border-t border-hairline/20">
-                <div className="w-9 h-9 rounded-full bg-brass/20 text-brass-500 font-normal font-serif text-base flex items-center justify-center border border-brass/40">
+              <div className="flex items-center space-x-3 pt-4 border-t border-white/10">
+                <div className="w-10 h-10 rounded-full bg-warmgold/20 text-warmgold font-bold font-serif flex items-center justify-center border border-warmgold/40">
                   {rev.name.charAt(0)}
                 </div>
                 <div>
-                  <div className="text-xs font-semibold text-cream-50">{rev.name}</div>
-                  <div className="text-[11px] text-cream-100/60 font-light">{rev.role}</div>
+                  <div className="text-sm font-bold text-white">{rev.name}</div>
+                  <div className="text-xs text-slate-400">{rev.role}</div>
                 </div>
               </div>
             </div>
@@ -55,18 +59,18 @@ export default function ReviewsSection({ onOpenReservation }) {
         </div>
 
         {/* Bottom Banner CTA */}
-        <div className="bg-espresso-900 p-8 sm:p-10 rounded-xl border border-hairline/40 text-center max-w-3xl mx-auto shadow-subtle">
-          <h3 className="font-serif text-2xl sm:text-3xl font-normal text-cream-50 mb-3">
+        <div className="bg-gradient-to-r from-forest-900 to-forest-800 p-8 sm:p-12 rounded-3xl border border-warmgold/30 text-center max-w-4xl mx-auto shadow-elevated">
+          <h3 className="font-serif text-2xl sm:text-4xl font-bold text-white mb-3">
             Planning Your Visit to Thukkuguda?
           </h3>
-          <p className="text-cream-100/80 text-xs sm:text-sm font-light max-w-lg mx-auto mb-6 leading-relaxed">
-            Reserve your lawn table on WhatsApp in under 30 seconds for guaranteed seating during weekend hours.
+          <p className="text-slate-200 text-sm sm:text-base max-w-xl mx-auto mb-8">
+            Reserve your lawn table on WhatsApp in under 30 seconds for guaranteed seating during weekend rush hours.
           </p>
           <button
             onClick={onOpenReservation}
-            className="bg-sage hover:bg-sage-600 text-white px-7 py-3 rounded-lg text-xs font-medium tracking-wide shadow-subtle transition-all inline-flex items-center space-x-2.5 border border-sage-600/30"
+            className="bg-terracotta hover:bg-terracotta-hover text-white px-8 py-4 rounded-2xl text-sm sm:text-base font-bold shadow-lg transition-all inline-flex items-center space-x-3"
           >
-            <MessageSquare className="w-4 h-4 text-cream-50" />
+            <MessageSquare className="w-5 h-5 text-white" />
             <span>Book Table via WhatsApp (+91 95339 63121)</span>
           </button>
         </div>
@@ -75,4 +79,3 @@ export default function ReviewsSection({ onOpenReservation }) {
     </section>
   );
 }
-

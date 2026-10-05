@@ -4,118 +4,115 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        // Classical & Peaceful Color Palette
-        cream: {
-          50: '#FAF6EF',  // Warm Cream Background
-          100: '#F5EFE4',
-          200: '#EAE1D2',
-          DEFAULT: '#FAF6EF',
-        },
-        linen: {
-          50: '#F8F4EC',
-          100: '#F1EADF',  // Soft Linen Surface
-          200: '#E7DDD0',
-          300: '#D6C8B7',
-          DEFAULT: '#F1EADF',
-        },
-        espresso: {
-          50: '#8A7A71',
-          100: '#6F6258',  // Muted Text
-          200: '#4A3D36',
-          900: '#2B211B',  // Deep Espresso Text
-          950: '#1E1612',
-          DEFAULT: '#2B211B',
-        },
-        sage: {
-          50: '#F3F5F1',
-          100: '#E1E6DC',
-          200: '#C2CDBB',
-          500: '#7D8B73',  // Primary Muted Sage Accent
-          600: '#64715A',
-          700: '#4D5845',
-          DEFAULT: '#7D8B73',
-        },
-        brass: {
-          50: '#FAF5EC',
-          100: '#F2E6D2',
-          500: '#B08D57',  // Antique Brass Accent Highlight
-          600: '#947340',
-          700: '#765B31',
-          DEFAULT: '#B08D57',
-        },
-        hairline: {
-          DEFAULT: '#E3D9CA', // Border Color
-          dark: '#3B332C',
-        },
-        charcoal: {
-          50: '#352F2B',
-          100: '#2A2421',
-          bg: '#1E1A17',      // Warm Dark Mode Base
-          surface: '#26211D', // Warm Dark Mode Surface
-          DEFAULT: '#1E1A17',
-        },
-        // Backward-compatibility aliases for components
+        // Day 4 Core Brand Palette: Forest Green (#1b3323), Warm Amber (#d4a359), Linen (#fdfbf7)
         forest: {
-          50: '#F3F5F1',
-          100: '#E1E6DC',
-          500: '#7D8B73',
-          600: '#64715A',
-          700: '#4D5845',
-          800: '#384232',
-          900: '#2B211B',
-          950: '#1E1A17',
-          DEFAULT: '#7D8B73',
+          50: '#f2f7f4',
+          100: '#dfede4',
+          200: '#c1dcd0',
+          300: '#97c4b4',
+          400: '#6ba894',
+          500: '#488b77',
+          600: '#366e5f',
+          700: '#2c594e',
+          800: '#24473e',
+          900: '#1b3323', // Primary Forest Green
+          950: '#0c1a12',
+          DEFAULT: '#1b3323',
         },
         amber: {
-          50: '#FAF5EC',
-          100: '#F2E6D2',
-          500: '#B08D57',
-          600: '#947340',
-          DEFAULT: '#B08D57',
+          50: '#fcf8f0',
+          100: '#f7eedb',
+          200: '#efdab6',
+          300: '#e5c189',
+          400: '#dca762',
+          500: '#d4a359', // Primary Warm Amber
+          600: '#b88241',
+          700: '#936233',
+          800: '#774c2e',
+          900: '#623e28',
+          DEFAULT: '#d4a359',
         },
+        // Backward-compatible alias for Warm Amber / Gold
         warmgold: {
-          light: '#C7A772',
-          DEFAULT: '#B08D57',
-          dark: '#947340',
+          light: '#e5c189',
+          DEFAULT: '#d4a359',
+          dark: '#b88241',
+        },
+        earthgold: {
+          light: '#e5c189',
+          DEFAULT: '#d4a359',
+          dark: '#b88241',
+        },
+        linen: {
+          50: '#fdfbf7', // Primary Linen Background
+          100: '#f8f4eb',
+          200: '#f1e8d8',
+          300: '#e6d6be',
+          400: '#d7be9f',
+          500: '#c4a27f',
+          DEFAULT: '#fdfbf7',
         },
         terracotta: {
-          DEFAULT: '#7D8B73',
-          hover: '#64715A',
+          50: '#faf2f0',
+          light: '#df886f',
+          DEFAULT: '#c86d51',
+          dark: '#a8543b',
+          hover: '#b55c42',
         }
       },
       fontFamily: {
-        serif: ['Cormorant Garamond', 'Playfair Display', 'Georgia', 'serif'],
-        sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
         display: ['Cormorant Garamond', 'Georgia', 'serif'],
       },
       spacing: {
-        '24': '6rem',
-        '28': '7rem',
-        '32': '8rem',
-        '36': '9rem',
+        '18': '4.5rem',
+        '22': '5.5rem',
+        '30': '7.5rem',
       },
       borderRadius: {
-        'lg': '0.5rem',
-        'xl': '0.75rem',
-        '2xl': '1rem',
-        '3xl': '1.5rem',
+        '4xl': '2rem',
+        '5xl': '2.5rem',
       },
       boxShadow: {
-        'soft': '0 8px 30px -10px rgba(43, 33, 27, 0.05)',
-        'subtle': '0 4px 20px -4px rgba(43, 33, 27, 0.04)',
-        'elevated': '0 16px 40px -12px rgba(43, 33, 27, 0.08)',
+        'soft': '0 10px 30px -10px rgba(27, 51, 35, 0.08)',
+        'elevated': '0 20px 40px -15px rgba(27, 51, 35, 0.16)',
+        'glass': '0 8px 32px 0 rgba(27, 51, 35, 0.12)',
+        'amber-glow': '0 0 25px rgba(212, 163, 89, 0.35)',
+        'forest-glow': '0 0 25px rgba(27, 51, 35, 0.30)',
       },
-      transitionDuration: {
-        '400': '400ms',
-        '600': '600ms',
+      backdropBlur: {
+        'xs': '2px',
+      },
+      animation: {
+        'float': 'floatSlow 5s ease-in-out infinite',
+        'fade-in': 'fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'slide-up': 'slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'pulse-glow': 'pulseGlow 2s infinite',
+      },
+      keyframes: {
+        floatSlow: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-8px)' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        pulseGlow: {
+          '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+          '50%': { opacity: '0.7', transform: 'scale(1.05)' },
+        }
       }
     },
   },
   plugins: [],
 }
-
 

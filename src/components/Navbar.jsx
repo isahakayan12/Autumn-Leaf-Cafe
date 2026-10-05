@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageSquare, Menu as MenuIcon, X, Compass } from 'lucide-react';
+import { Phone, MessageSquare, Menu as MenuIcon, X, MapPin, Clock, Compass } from 'lucide-react';
 import { CAFE_INFO } from '../data/cafeData';
 
 export default function Navbar({ onOpenReservation }) {
@@ -17,6 +17,7 @@ export default function Navbar({ onOpenReservation }) {
     // Calculate Indian Standard Time (IST)
     const checkCafeStatus = () => {
       const now = new Date();
+      // UTC time + 5.5 hours for IST
       const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
       const istTime = new Date(utc + (3600000 * 5.5));
       
@@ -51,31 +52,29 @@ export default function Navbar({ onOpenReservation }) {
     { name: "Highway Access", href: "#highway" },
     { name: "Digital Menu", href: "#menu" },
     { name: "Lawn Experience", href: "#gallery" },
-    { name: "Location & Hours", href: "#location" },
+    { name: "Location & Directions", href: "#location" },
     { name: "Reviews", href: "#reviews" }
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${
-      scrolled 
-        ? 'bg-cream/95 backdrop-blur-md border-b border-hairline py-3.5 shadow-subtle' 
-        : 'bg-gradient-to-b from-espresso-900/60 to-transparent text-white py-5'
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      scrolled ? 'glass-nav shadow-soft py-3' : 'bg-gradient-to-b from-black/70 to-transparent text-white py-5'
     }`}>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
         {/* Brand Logo */}
         <a href="#hero" className="flex items-center space-x-3 group">
-          <div className="w-9 h-9 rounded-full bg-cream border border-hairline flex items-center justify-center text-espresso-900 font-serif text-lg font-semibold shadow-sm group-hover:border-sage transition-colors">
+          <div className="w-10 h-10 rounded-full bg-forest-900 border border-warmgold flex items-center justify-center text-warmgold font-serif text-xl font-bold group-hover:scale-105 transition-transform shadow-sm">
             AL
           </div>
           <div>
-            <span className={`font-serif text-xl sm:text-2xl font-normal tracking-tight block ${
-              scrolled ? 'text-espresso-900' : 'text-cream-50'
+            <span className={`font-serif text-2xl font-bold tracking-tight block ${
+              scrolled ? 'text-forest-900' : 'text-white'
             }`}>
               Autumn Leaf Cafe
             </span>
-            <span className={`text-[10px] uppercase tracking-widest block font-medium ${
-              scrolled ? 'text-espresso-100' : 'text-cream-100/80'
+            <span className={`text-[11px] uppercase tracking-wider font-semibold block ${
+              scrolled ? 'text-forest-600' : 'text-emerald-300'
             }`}>
               Imamguda • Thukkuguda
             </span>
@@ -83,15 +82,13 @@ export default function Navbar({ onOpenReservation }) {
         </a>
 
         {/* Desktop Nav Links */}
-        <nav className="hidden lg:flex items-center space-x-8">
+        <nav className="hidden lg:flex items-center space-x-7">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className={`text-xs font-medium tracking-wide transition-colors ${
-                scrolled 
-                  ? 'text-espresso-900/80 hover:text-sage-600' 
-                  : 'text-cream-50/90 hover:text-cream-50'
+              className={`text-sm font-medium transition-colors hover:text-terracotta ${
+                scrolled ? 'text-slate-700' : 'text-slate-100 hover:text-warmgold'
               }`}
             >
               {link.name}
@@ -103,24 +100,22 @@ export default function Navbar({ onOpenReservation }) {
         <div className="hidden sm:flex items-center space-x-4">
           
           {/* IST Status Pill */}
-          <div className={`hidden xl:flex items-center px-3 py-1 rounded-full text-[11px] font-medium border transition-colors ${
-            scrolled
-              ? isOpenNow 
-                ? 'bg-sage-50 border-sage-200 text-sage-700' 
-                : 'bg-linen-100 border-hairline text-espresso-100'
-              : 'bg-espresso-900/40 border-cream-50/20 text-cream-50'
-          }`}>
-            <span className={`w-1.5 h-1.5 rounded-full mr-2 ${isOpenNow ? 'bg-sage-500' : 'bg-brass-500'}`}></span>
+          <div className={`hidden xl:flex items-center px-3 py-1 rounded-full text-xs font-semibold border ${
+            isOpenNow 
+              ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-700' 
+              : 'bg-amber-500/10 border-amber-500/30 text-amber-700'
+          } ${!scrolled && 'bg-black/30 border-white/20 text-white'}`}>
+            <span className={`w-2 h-2 rounded-full mr-2 ${isOpenNow ? 'bg-emerald-500 badge-pulse' : 'bg-amber-500'}`}></span>
             {statusText}
           </div>
 
           {/* Direct Phone Call */}
           <a
             href={`tel:${CAFE_INFO.phone}`}
-            className={`flex items-center space-x-1.5 text-xs font-medium px-3 py-2 rounded-lg border transition-all ${
+            className={`flex items-center space-x-1.5 text-xs font-semibold px-3 py-2 rounded-lg border transition-all ${
               scrolled 
-                ? 'border-hairline text-espresso-900 hover:bg-linen-100' 
-                : 'border-cream-50/30 text-cream-50 hover:bg-cream-50/10'
+                ? 'border-forest-900/20 text-forest-900 hover:bg-forest-50' 
+                : 'border-white/30 text-white hover:bg-white/10'
             }`}
             title="Call Cafe"
           >
@@ -131,10 +126,10 @@ export default function Navbar({ onOpenReservation }) {
           {/* Reserve CTA */}
           <button
             onClick={onOpenReservation}
-            className="bg-sage text-white hover:bg-sage-600 px-4 py-2 rounded-lg text-xs font-medium tracking-wide shadow-subtle hover:shadow-soft transition-all flex items-center space-x-2 border border-sage-600/30"
+            className="bg-forest-900 hover:bg-forest-800 text-white px-4 py-2 rounded-xl text-sm font-semibold shadow-md hover:shadow-lg transition-all flex items-center space-x-2 border border-warmgold/30"
           >
-            <MessageSquare className="w-3.5 h-3.5 text-cream-50" />
-            <span>Reserve Table</span>
+            <MessageSquare className="w-4 h-4 text-warmgold" />
+            <span>Book on WhatsApp</span>
           </button>
         </div>
 
@@ -142,18 +137,17 @@ export default function Navbar({ onOpenReservation }) {
         <div className="flex items-center space-x-2 sm:hidden">
           <button
             onClick={onOpenReservation}
-            className="bg-sage text-white p-2 rounded-lg text-xs font-medium shadow-sm"
-            aria-label="Book Table"
+            className="bg-forest-900 text-white p-2 rounded-lg text-xs font-semibold shadow-sm"
           >
-            <MessageSquare className="w-4 h-4" />
+            <MessageSquare className="w-4 h-4 text-warmgold" />
           </button>
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className={`p-2 rounded-lg ${scrolled ? 'text-espresso-900' : 'text-cream-50'}`}
+            className={`p-2 rounded-lg ${scrolled ? 'text-forest-900' : 'text-white'}`}
             aria-label="Toggle navigation menu"
           >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <MenuIcon className="w-5 h-5" />}
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <MenuIcon className="w-6 h-6" />}
           </button>
         </div>
 
@@ -161,48 +155,48 @@ export default function Navbar({ onOpenReservation }) {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="sm:hidden bg-cream border-b border-hairline px-5 pt-4 pb-6 space-y-4">
+        <div className="sm:hidden glass-nav border-b border-forest-900/10 px-4 pt-3 pb-6 space-y-4 animate-fadeIn">
           
           {/* Mobile Status Pill */}
-          <div className="flex items-center justify-between bg-linen-100 p-3 rounded-lg border border-hairline">
-            <div className="flex items-center space-x-2 text-xs font-medium text-espresso-900">
-              <span className={`w-2 h-2 rounded-full ${isOpenNow ? 'bg-sage-500' : 'bg-brass-500'}`}></span>
-              <span>{statusText}</span>
+          <div className="flex items-center justify-between bg-forest-900/5 p-3 rounded-xl">
+            <div className="flex items-center space-x-2 text-xs font-semibold">
+              <span className={`w-2.5 h-2.5 rounded-full ${isOpenNow ? 'bg-emerald-500' : 'bg-amber-500'}`}></span>
+              <span className="text-forest-900">{statusText}</span>
             </div>
-            <span className="text-[10px] text-espresso-100 font-medium uppercase tracking-widest">IST</span>
+            <span className="text-[10px] text-forest-600 font-bold uppercase">IST Zone</span>
           </div>
 
-          <div className="grid grid-cols-1 gap-1 pt-1">
+          <div className="grid grid-cols-1 gap-2 pt-1">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-espresso-900 hover:bg-linen-100 px-3 py-2.5 rounded-lg text-sm font-medium flex items-center justify-between transition-colors"
+                className="text-forest-900 hover:bg-forest-900/5 px-3 py-2.5 rounded-lg font-medium text-base flex items-center justify-between"
               >
                 <span>{link.name}</span>
-                <Compass className="w-3.5 h-3.5 text-espresso-100" />
+                <Compass className="w-4 h-4 text-forest-600" />
               </a>
             ))}
           </div>
 
-          <div className="pt-3 border-t border-hairline space-y-2">
+          <div className="pt-2 border-t border-forest-900/10 space-y-2">
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
                 onOpenReservation();
               }}
-              className="w-full bg-sage text-white py-3 rounded-lg text-xs font-medium tracking-wide flex items-center justify-center space-x-2 shadow-subtle"
+              className="w-full bg-forest-900 text-white py-3 rounded-xl font-semibold flex items-center justify-center space-x-2 shadow-md"
             >
-              <MessageSquare className="w-4 h-4 text-cream-50" />
-              <span>Reserve Table via WhatsApp</span>
+              <MessageSquare className="w-4 h-4 text-warmgold" />
+              <span>Book Table via WhatsApp</span>
             </button>
 
             <a
               href={`tel:${CAFE_INFO.phone}`}
-              className="w-full bg-linen-100 text-espresso-900 py-2.5 rounded-lg text-xs font-medium flex items-center justify-center space-x-2 border border-hairline"
+              className="w-full bg-linen-200 text-forest-900 py-2.5 rounded-xl font-medium text-sm flex items-center justify-center space-x-2 border border-forest-900/10"
             >
-              <Phone className="w-3.5 h-3.5 text-espresso-100" />
+              <Phone className="w-4 h-4 text-forest-700" />
               <span>Call +91 95339 63121</span>
             </a>
           </div>
@@ -211,4 +205,3 @@ export default function Navbar({ onOpenReservation }) {
     </header>
   );
 }
-
