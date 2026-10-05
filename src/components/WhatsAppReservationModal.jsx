@@ -54,28 +54,28 @@ Please confirm table availability. Thank you!`;
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-md animate-fadeIn">
-      <div className="bg-white rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-elevated border border-forest-900/10 p-6 sm:p-8 relative">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-espresso-950/80 backdrop-blur-md animate-fadeIn">
+      <div className="bg-cream rounded-xl max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-elevated border border-hairline p-6 sm:p-8 relative text-espresso-900">
         
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition-colors"
+          className="absolute top-5 right-5 w-8 h-8 rounded-full bg-linen-100 hover:bg-linen-200 text-espresso-900 flex items-center justify-center transition-colors border border-hairline"
           aria-label="Close modal"
         >
-          <X className="w-5 h-5" />
+          <X className="w-4 h-4" />
         </button>
 
         {/* Modal Header */}
         <div className="mb-6">
-          <div className="inline-flex items-center space-x-2 bg-terracotta/10 text-terracotta px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2">
-            <MessageSquare className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center space-x-1.5 bg-sage-50 text-sage-700 px-3 py-0.5 rounded-full text-[11px] font-medium uppercase tracking-widest mb-2 border border-sage-200">
+            <MessageSquare className="w-3 h-3 text-sage-600" />
             <span>Instant Booking</span>
           </div>
-          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-forest-900">
+          <h2 className="font-serif text-2xl sm:text-3xl font-normal text-espresso-900">
             Reserve Table via WhatsApp
           </h2>
-          <p className="text-slate-600 text-xs sm:text-sm mt-1">
+          <p className="text-espresso-100 text-xs mt-1 font-light">
             Autumn Leaf Cafe • Thukkuguda / Imamguda (+91 95339 63121)
           </p>
         </div>
@@ -86,8 +86,8 @@ Please confirm table availability. Thank you!`;
           {/* Date & Time */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-xs font-bold text-forest-900 mb-1.5 flex items-center">
-                <Calendar className="w-3.5 h-3.5 mr-1 text-forest-600" /> Select Date
+              <label className="block text-xs font-medium text-espresso-900 mb-1 flex items-center">
+                <Calendar className="w-3.5 h-3.5 mr-1 text-sage-600" /> Select Date
               </label>
               <input
                 type="date"
@@ -95,18 +95,18 @@ Please confirm table availability. Thank you!`;
                 value={date}
                 min={new Date().toISOString().split('T')[0]}
                 onChange={(e) => setDate(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs sm:text-sm focus:outline-none focus:border-forest-900"
+                className="w-full px-3 py-2 rounded-lg border border-hairline bg-linen-100 text-xs focus:outline-none focus:border-sage text-espresso-900"
               />
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-forest-900 mb-1.5 flex items-center">
-                <Clock className="w-3.5 h-3.5 mr-1 text-forest-600" /> Preferred Time
+              <label className="block text-xs font-medium text-espresso-900 mb-1 flex items-center">
+                <Clock className="w-3.5 h-3.5 mr-1 text-sage-600" /> Preferred Time
               </label>
               <select
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs sm:text-sm focus:outline-none focus:border-forest-900 bg-white"
+                className="w-full px-3 py-2 rounded-lg border border-hairline bg-linen-100 text-xs focus:outline-none focus:border-sage text-espresso-900"
               >
                 <option value="08:30 AM">08:30 AM (Breakfast)</option>
                 <option value="10:00 AM">10:00 AM (Morning Coffee)</option>
@@ -120,8 +120,8 @@ Please confirm table availability. Thank you!`;
 
           {/* Number of Guests */}
           <div>
-            <label className="block text-xs font-bold text-forest-900 mb-1.5 flex items-center">
-              <Users className="w-3.5 h-3.5 mr-1 text-forest-600" /> Guests ({guests} {guests === 1 ? 'Person' : 'People'})
+            <label className="block text-xs font-medium text-espresso-900 mb-1 flex items-center">
+              <Users className="w-3.5 h-3.5 mr-1 text-sage-600" /> Guests ({guests} {guests === 1 ? 'Person' : 'People'})
             </label>
             <input
               type="range"
@@ -129,9 +129,9 @@ Please confirm table availability. Thank you!`;
               max="15"
               value={guests}
               onChange={(e) => setGuests(parseInt(e.target.value))}
-              className="w-full accent-forest-900 cursor-pointer"
+              className="w-full accent-sage cursor-pointer"
             />
-            <div className="flex justify-between text-[10px] text-slate-400 font-semibold px-1">
+            <div className="flex justify-between text-[10px] text-espresso-100/70 font-medium px-1">
               <span>1 Solo</span>
               <span>4 Couple/Family</span>
               <span>8+ Group</span>
@@ -141,13 +141,13 @@ Please confirm table availability. Thank you!`;
 
           {/* Seating Preference */}
           <div>
-            <label className="block text-xs font-bold text-forest-900 mb-1.5 flex items-center">
-              <MapPin className="w-3.5 h-3.5 mr-1 text-forest-600" /> Seating Preference
+            <label className="block text-xs font-medium text-espresso-900 mb-1 flex items-center">
+              <MapPin className="w-3.5 h-3.5 mr-1 text-sage-600" /> Seating Preference
             </label>
             <select
               value={seating}
               onChange={(e) => setSeating(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs sm:text-sm focus:outline-none focus:border-forest-900 bg-white"
+              className="w-full px-3 py-2 rounded-lg border border-hairline bg-linen-100 text-xs focus:outline-none focus:border-sage text-espresso-900"
             >
               {seatingOptions.map((opt, i) => (
                 <option key={i} value={opt}>{opt}</option>
@@ -157,13 +157,13 @@ Please confirm table availability. Thank you!`;
 
           {/* Occasion */}
           <div>
-            <label className="block text-xs font-bold text-forest-900 mb-1.5 flex items-center">
-              <Sparkles className="w-3.5 h-3.5 mr-1 text-terracotta" /> Dining Occasion
+            <label className="block text-xs font-medium text-espresso-900 mb-1 flex items-center">
+              <Sparkles className="w-3.5 h-3.5 mr-1 text-brass-500" /> Dining Occasion
             </label>
             <select
               value={occasion}
               onChange={(e) => setOccasion(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs sm:text-sm focus:outline-none focus:border-forest-900 bg-white"
+              className="w-full px-3 py-2 rounded-lg border border-hairline bg-linen-100 text-xs focus:outline-none focus:border-sage text-espresso-900"
             >
               {occasionOptions.map((opt, i) => (
                 <option key={i} value={opt}>{opt}</option>
@@ -173,7 +173,7 @@ Please confirm table availability. Thank you!`;
 
           {/* Notes */}
           <div>
-            <label className="block text-xs font-bold text-forest-900 mb-1.5">
+            <label className="block text-xs font-medium text-espresso-900 mb-1">
               Special Requests (Dietary, High Chair, Pet Space)
             </label>
             <textarea
@@ -181,16 +181,16 @@ Please confirm table availability. Thank you!`;
               placeholder="e.g. Bringing a dog, need high chair, layover flight at 10 PM..."
               value={notes}
               onChange={(e) => setNotes(e.target.value)}
-              className="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs sm:text-sm focus:outline-none focus:border-forest-900"
+              className="w-full px-3 py-2 rounded-lg border border-hairline bg-linen-100 text-xs focus:outline-none focus:border-sage text-espresso-900"
             ></textarea>
           </div>
 
           {/* Pre-filled Message Preview Box */}
-          <div className="bg-linen-100 p-3.5 rounded-xl border border-forest-900/10 text-xs text-slate-700 space-y-1">
-            <div className="font-bold text-forest-900 flex items-center text-[11px]">
-              <CheckCircle2 className="w-3.5 h-3.5 mr-1 text-emerald-600" /> WhatsApp Message Preview
+          <div className="bg-linen-100 p-3 rounded-lg border border-hairline text-xs space-y-1">
+            <div className="font-semibold text-espresso-900 flex items-center text-[11px]">
+              <CheckCircle2 className="w-3.5 h-3.5 mr-1 text-sage-600" /> WhatsApp Message Preview
             </div>
-            <p className="italic text-[11px] text-slate-600 line-clamp-2">
+            <p className="italic text-[11px] text-espresso-100/80 font-light line-clamp-2">
               "Reserving for {guests} guest(s) on {date} at {time} in {seating} for {occasion}."
             </p>
           </div>
@@ -198,9 +198,9 @@ Please confirm table availability. Thank you!`;
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full py-3.5 rounded-xl bg-forest-900 hover:bg-forest-800 text-white font-bold text-sm shadow-md transition-all flex items-center justify-center space-x-2"
+            className="w-full py-3 rounded-lg bg-sage hover:bg-sage-600 text-white font-medium text-xs tracking-wide shadow-subtle transition-all flex items-center justify-center space-x-2 border border-sage-600/30"
           >
-            <MessageSquare className="w-4 h-4 text-warmgold" />
+            <MessageSquare className="w-4 h-4 text-cream-50" />
             <span>Open WhatsApp & Send Reservation</span>
           </button>
         </form>
@@ -208,9 +208,9 @@ Please confirm table availability. Thank you!`;
         <div className="mt-4 text-center">
           <a
             href={`tel:${CAFE_INFO.phone}`}
-            className="text-xs text-slate-500 hover:text-forest-900 font-medium inline-flex items-center space-x-1"
+            className="text-xs text-espresso-100 hover:text-espresso-900 font-medium inline-flex items-center space-x-1"
           >
-            <Phone className="w-3.5 h-3.5 mr-1 text-forest-700" />
+            <Phone className="w-3.5 h-3.5 mr-1 text-sage-600" />
             <span>Prefer to call directly? +91 95339 63121</span>
           </a>
         </div>
@@ -219,3 +219,4 @@ Please confirm table availability. Thank you!`;
     </div>
   );
 }
+
